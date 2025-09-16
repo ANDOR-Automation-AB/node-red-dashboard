@@ -25,6 +25,14 @@ import './stylesheets/common.css'
 import store from './store/index.mjs'
 import { useDataTracker } from './widgets/data-tracker.mjs' // eslint-disable-line import/order
 
+// Andor specific
+
+// chart
+import Chart from 'chart.js/auto'
+window.Chart = Chart
+
+
+
 // Retrieve the "Default" theme from cache
 function retrieveDefaultThemeFromCache () {
     const cachedTheme = localStorage.getItem('ndrb-theme-default')
